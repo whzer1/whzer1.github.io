@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathJax in GitHub Pages</title>
+    <!-- 配置 MathJax -->
+    <script type="text/javascript">
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\', '\']]  // 支持 $...$ 和 ...
+            }
+        };
+    </script>
+    <script type="text/javascript" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .formula {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-left: 4px solid #007acc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MathJax 示例 - GitHub Pages</h1>
+        <p>这是一个支持数学公式的静态网站示例。</p>
+    </header>
+
+    <main>
+        <h2>行内公式示例</h2>
+        <p>行内公式使用单个 <code>$</code> 包裹，例如：$E = mc^2$。</p>
+
+        <h2>块级公式示例</h2>
+        <div class="formula">
+            $$\int_a^b f(x)\, dx = F(b) - F(a)$$
+        </div>
+
+        <h2>复杂公式示例</h2>
+        <div class="formula">
+            $$
+            p = \frac{1}{2}(a+b+c), \quad
+            A = \sqrt{p(p-a)(p-b)(p-c)}
+            $$
+        </div>
+    </main>
+
+    <footer>
+        <p>由 <a href="https://github.com/">GitHub Pages</a> 提供支持。</p>
+    </footer>
+</body>
+</html>
