@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>正在跳转</title>
+    <link rel="canonical" href="https://blog.wezz.online/">
+    
+    <meta http-equiv="refresh" content="0;url=https://blog.wezz.online/">
+    
+    <script>
+        // 获取当前访问的路径（例如 /posts/algorithm/）
+        var path = window.location.pathname;
+        // 拼接新域名 + 路径，实现“哪里来的跳回哪里去”
+        // 如果您的文章链接结构没变，这样用户体验最好
+        var newUrl = "https://blog.wezz.online" + path;
+        
+        window.location.href = newUrl;
+    </script>
+</head>
+<body>
+    <p>正在跳转...</p>
+    <p>如果没有自动跳转，请点击：<a href="https://blog.wezz.online/">点击这里</a></p>
+</body>
+</html>
