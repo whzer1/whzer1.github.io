@@ -1,0 +1,18 @@
+/* 隐藏 Waline 版权信息 */
+.wl-power {
+    display: none !important;
+}
+.footer-content, 
+#runtime_span, 
+#umami-site-uv-container, 
+#umami-site-pv-container,
+#leancloud-site-uv-container
+#leancloud-site-pv-container {
+    /* 强制使用霞鹜文楷 */
+    font-family: "LXGW WenKai Screen", sans-serif !important;
+    /* 可选：稍微调大一点，看起来更清晰 */
+    font-size: 15px; 
+    /* 可选：数字加粗，更有质感 */
+    font-weight: bold;
+}
+
